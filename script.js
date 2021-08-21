@@ -8,12 +8,21 @@ function add_data(jsonObj) {
 }
 
 // データをcsv形式にし、ダウンロード
+/*
 function download_data() {
     let loghead = "id,score,hit_num,hit_rate\n";
     let logdata = "";
     datas.map(function (d) {
         logdata += d.id + "," + d.score + "," + d.hit_num + "," + d.hit_rate + "\n";
     });
+    */
+    function download_data() {
+        let loghead = "success\n";
+        let logdata = "";
+        datas.map(function (d) {
+            logdata += d.success+"\n";
+        });
+   
 
     const filename = getNow() + ".csv";
     const bom = new Uint8Array([0xef, 0xbb, 0xbf]);

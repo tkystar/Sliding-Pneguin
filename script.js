@@ -17,10 +17,10 @@ function download_data() {
     });
     */
     function download_data() {
-        let loghead = "success,fish_num\n";
+        let loghead = "success,fish_num,clear_time\n";
         let logdata = "";
         datas.map(function (d) {
-            logdata += d.success+","+d.fish_num+ "\n";
+            logdata += d.success+","+d.fish_num+","+d.clear_time +"\n";
         });
    
 

@@ -20,7 +20,7 @@ function download_data() {
         let loghead = "success,fish_num\n";
         let logdata = "";
         datas.map(function (d) {
-            logdata += d.success+","+d.fish_num+"\n";
+            logdata += d.success+","+d.fish_num+ "\n";
         });
    
 
